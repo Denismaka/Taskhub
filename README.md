@@ -149,7 +149,7 @@ src/
 
 ## 🔐 Connexion
 
-Pour tester l'application, vous pouvez utiliser n'importe quel email et mot de passe pour vous connecter (l'authentification est factice pour la démo).
+Pour tester l'application, vous pouvez utiliser n'importe quel email et mot de passe pour vous connecter 
 
 ## 📝 Notes
 
@@ -157,26 +157,6 @@ Pour tester l'application, vous pouvez utiliser n'importe quel email et mot de p
 - Le thème est sauvegardé et persiste entre les sessions
 - Les cookies sont utilisés pour la session utilisateur
 
-## 🎯 Prochaines Étapes Possibles
-
-Pour continuer à apprendre, vous pouvez :
-
-1. Ajouter une page d'inscription
-2. Ajouter des catégories de tâches
-3. Ajouter des dates d'échéance
-4. Ajouter un système de recherche
-5. Ajouter un système de filtrage
-6. Intégrer une vraie API backend
-7. Ajouter des tests unitaires
-8. Ajouter TypeScript
-
-## 💡 Conseils d'Apprentissage
-
-1. **Lisez le code** : Chaque fichier est commenté pour faciliter la compréhension
-2. **Expérimentez** : Modifiez les couleurs, les textes, ajoutez des fonctionnalités
-3. **Comprenez les concepts** : Étudiez les Hooks React, la gestion d'état, le routing
-4. **Pratiquez** : Refaites le projet de zéro pour bien comprendre
-5. **Questionnez** : Si vous ne comprenez pas quelque chose, cherchez la réponse
 
 ## 📖 Documentation
 
