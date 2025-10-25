@@ -23,9 +23,18 @@ export default function Login() {
         }
 
         // Simule un délai de connexion
+        // Charge les données depuis localStorage s'il existe
+        const savedUser = localStorage.getItem("th_user");
+        let userData = { email };
+        
+        if (savedUser) {
+            const parsedUser = JSON.parse(savedUser);
+            userData = parsedUser; // Récupère le nom s'il existe
+        }
+        
         setTimeout(() => {
-            login({ email });
-            toast.success(`👋 Bienvenue ${email}!`);
+            login(userData);
+            toast.success(`👋 Bienvenue ${userData.name || userData.email}!`);
             setIsLoading(false);
             navigate("/dashboard");
         }, 500);

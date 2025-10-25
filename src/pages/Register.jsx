@@ -38,7 +38,7 @@ export default function Register() {
 
         // Simule un délai d'inscription
         setTimeout(() => {
-            login({ email, name });
+            login({ email, name, password }); // Sauvegarde aussi le password
             toast.success(`🎉 Bienvenue ${name} ! Votre compte a été créé.`);
             setIsLoading(false);
             navigate("/dashboard");
