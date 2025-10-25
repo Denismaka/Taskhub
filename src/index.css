@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal project-level overrides (kept simple because Tailwind will handle most) */
+:root {
+    --app-bg: #0f1724;
+}
+
+body {
+    @apply min-h-screen bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 font-sans;
+}
+
+.app-container {
+    @apply max-w-4xl mx-auto p-6;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.card {
+    @apply bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-soft;
+}
+
+/* small helpers */
+.muted {
+    @apply text-neutral-500 dark:text-neutral-400;
+}
