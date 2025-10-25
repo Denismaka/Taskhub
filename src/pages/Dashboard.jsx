@@ -28,7 +28,7 @@ export default function Dashboard() {
                 <div>
                     <h1 className="text-3xl font-bold">📊 Tableau de bord</h1>
                     <p className="muted mt-1">
-                        Bienvenue, {user?.email || "Utilisateur"}!
+                        Bienvenue, {user?.name || user?.email || "Utilisateur"}!
                     </p>
                 </div>
                 <div className="flex gap-3">

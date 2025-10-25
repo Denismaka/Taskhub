@@ -199,4 +199,4 @@ Pour toute question, collaboration ou devis :
 
 Merci pour votre visite et votre intérêt ! ✨
 
-Développé avec ❤️ pour l'apprentissage de React
+Développé avec ❤️ par Denis Maka pour l'apprentissage de React

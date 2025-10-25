@@ -32,7 +32,7 @@ Exécute des effets de bord (side effects).
 useEffect(() => {
     // Code qui s'exécute après chaque rendu
     console.log("Le composant est monté");
-}, []); // Tableau de dépendances vide = s'exécute 1 fois
+}, []); // Tableau de dépendances vide
 ```
 
 **Où l'utiliser ?**
@@ -74,10 +74,10 @@ export const useAuthStore = create((set) => ({
 **Comment l'utiliser ?**
 
 ```jsx
-// Lire l'état
+// Lre l'état
 const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
 
-// Utiliser une action
+// Utliser une action
 const login = useAuthStore((s) => s.login);
 ```
 
@@ -127,7 +127,7 @@ import { useNavigate, Link } from "react-router-dom";
 const navigate = useNavigate();
 navigate("/dashboard");
 
-// Composant Link (pour les liens)
+// Composat Link(pour les liens)
 <Link to="/dashboard">Dashboard</Link>
 ```
 

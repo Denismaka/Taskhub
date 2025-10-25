@@ -21,16 +21,16 @@ export default function Home() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <Link
-                        to="/login"
+                        to="/register"
                         className="px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium text-lg transition-all transform hover:scale-105"
                     >
-                        🚀 Commencer
+                        🚀 Créer un compte
                     </Link>
                     <Link
-                        to="/tasks"
+                        to="/login"
                         className="px-8 py-3 border border-primary-500 text-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/20 rounded-lg font-medium text-lg transition-all"
                     >
-                        Voir les tâches
+                        Se connecter
                     </Link>
                 </div>
             </motion.div>
