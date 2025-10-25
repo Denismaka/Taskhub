@@ -126,6 +126,21 @@ function AppContent() {
                     },
                 }}
             />
+
+            {/* Footer avec copyright */}
+            <footer className="mt-12 py-6 text-center border-t border-neutral-200 dark:border-neutral-700">
+                <p className="text-sm muted">
+                    © {new Date().getFullYear()} TaskHub - Créé avec ❤️ par{" "}
+                    <a 
+                        href="https://github.com/Denismaka" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary-600 dark:text-primary-400 hover:underline font-medium"
+                    >
+                        Denis Maka
+                    </a>
+                </p>
+            </footer>
         </div>
     );
 }
