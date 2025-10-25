@@ -174,14 +174,13 @@ Pour continuer à apprendre, vous pouvez :
 
 1. **Lisez le code** : Chaque fichier est commenté pour faciliter la compréhension
 2. **Expérimentez** : Modifiez les couleurs, les textes, ajoutez des fonctionnalités
-3. **Comprenez les concepts** : Lisez le fichier `APPRENTISSAGE.md`
+3. **Comprenez les concepts** : Étudiez les Hooks React, la gestion d'état, le routing
 4. **Pratiquez** : Refaites le projet de zéro pour bien comprendre
 5. **Questionnez** : Si vous ne comprenez pas quelque chose, cherchez la réponse
 
 ## 📖 Documentation
 
-- `README.md` - Ce fichier
-- `APPRENTISSAGE.md` - Guide d'apprentissage détaillé
+- `README.md` - Ce fichier contient toute la documentation du projet
 
 ## 📬 Contact
 
