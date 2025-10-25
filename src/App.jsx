@@ -12,7 +12,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function AppContent() {
     const { isDark, toggleTheme } = useTheme();
-    const { isAuthenticated } = useAuthStore();
+    const { isAuthenticated, user } = useAuthStore();
     const location = useLocation();
 
     return (
@@ -51,6 +51,13 @@ function AppContent() {
                         
                         {isAuthenticated ? (
                             <>
+                                {/* Affichage du nom d'utilisateur */}
+                                <div className="flex items-center gap-2 px-3 py-1 rounded bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 border border-primary-200 dark:border-primary-700">
+                                    <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
+                                        👋 {user?.name || user?.email || "Utilisateur"}
+                                    </span>
+                                </div>
+                                
                                 <Link
                                     to="/dashboard"
                                     className={`text-sm px-3 py-1 rounded transition-colors ${
