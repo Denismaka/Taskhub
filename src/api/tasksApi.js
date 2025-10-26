@@ -22,7 +22,13 @@ export async function getTasks() {
 
 export async function addTask(task) {
     const tasks = read();
-    const newTask = { id: Date.now().toString(), ...task };
+    const newTask = { 
+        id: Date.now().toString(), 
+        createdAt: new Date().toISOString(),
+        category: task.category || 'general',
+        dueDate: task.dueDate || null,
+        ...task 
+    };
     tasks.unshift(newTask);
     write(tasks);
     await new Promise((r) => setTimeout(r, 200));
