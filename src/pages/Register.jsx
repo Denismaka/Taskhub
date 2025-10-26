@@ -36,9 +36,9 @@ export default function Register() {
             return;
         }
 
-        // Simule un délai d'inscription
+        // Simul un délai d'inscription
         setTimeout(() => {
-            login({ email, name, password }); // Sauvegarde aussi le password
+            login({ email, name, password }); // Sauvgarde aussi le mdp
             toast.success(`🎉 Bienvenue ${name} ! Votre compte a été créé.`);
             setIsLoading(false);
             navigate("/dashboard");
