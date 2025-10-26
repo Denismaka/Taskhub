@@ -7,6 +7,10 @@ Une application moderne de gestion de tâches construite avec React, Vite, et le
 ✅ **Inscription / Connexion** avec cookies  
 🏠 **Dashboard** avec statistiques en temps réel  
 📋 **Liste de tâches** avec CRUD complet  
+🏷️ **Catégories de tâches** (6 catégories disponibles)  
+📅 **Dates d'échéance** avec alertes en retard  
+🔍 **Recherche avancée** en temps réel  
+🔎 **Système de filtrage** par statut et catégorie  
 🌐 **Données distantes** gérées avec React Query  
 🔔 **Notifications toast** pour les actions  
 🪄 **Animations** avec Framer Motion  
@@ -38,34 +42,49 @@ Une application moderne de gestion de tâches construite avec React, Vite, et le
 - [x] Suppression avec modal de confirmation
 - [x] Séparation tâches actives / terminées
 - [x] Persistance dans localStorage
+- [x] Catégories de tâches (Général, Travail, Personnel, Shopping, Santé, Urgent)
+- [x] Dates d'échéance avec indicateur visuel
+- [x] Alertes automatiques pour tâches en retard
+- [x] Badges de catégorie colorés
+- [x] Interface visuelle pour tâches en retard (fond rouge)
 
-### 4. Dashboard 📊
+### 4. Recherche et Filtrage 🔍
+- [x] Barre de recherche en temps réel
+- [x] Recherche dans titre et description
+- [x] Filtrage par statut (Toutes, Actives, Terminées)
+- [x] Filtrage par catégorie
+- [x] Combinaison des filtres
+- [x] Compteur de résultats
+- [x] Mise en surbrillance des résultats
+
+### 5. Dashboard 📊
 - [x] Statistiques en temps réel
 - [x] Compteur de tâches totales
 - [x] Compteur de tâches actives
 - [x] Compteur de tâches terminées
 - [x] Résumé rapide de l'activité
 
-### 5. Communication avec l'API 🌐
+### 6. Communication avec l'API 🌐
 - [x] React Query pour la gestion des données
 - [x] Fake API avec localStorage
 - [x] Simulation de délais réseau
 - [x] Cache automatique et invalidation
+- [x] Support pour catégories et dates d'échéance
 
-### 6. Animations 🪄
+### 7. Animations 🪄
 - [x] Animation d'apparition des cartes
 - [x] Animation au hover des boutons
 - [x] Animation au clic (tap)
 - [x] Animation de sortie (exit) avec AnimatePresence
 - [x] Transitions fluides
 
-### 7. Composants 🔧
-- [x] TaskCard - Carte de tâche
+### 8. Composants 🔧
+- [x] TaskCard - Carte de tâche avec catégorie et date d'échéance
 - [x] Modal - Modal de confirmation
 - [x] ProtectedRoute - Route protégée
 - [x] ThemeProvider - Gestion du thème
 
-### 8. Autres ⚙️
+### 9. Autres ⚙️
 - [x] Validation des formulaires
 - [x] Messages d'erreur et de succès
 - [x] Loading states
@@ -136,7 +155,7 @@ src/
 
 ## 🎓 Concepts React Pratiqués
 
-1. ✅ **Hooks de base** : useState, useEffect, useContext
+1. ✅ **Hooks de base** : useState, useEffect, useContext, useMemo
 2. ✅ **Gestion d'état global** : Zustand
 3. ✅ **Context API** : Thème partagé
 4. ✅ **Routing** : React Router DOM
@@ -146,16 +165,53 @@ src/
 8. ✅ **Protected Routes** : Sécurité
 9. ✅ **Hooks personnalisés** : useTheme
 10. ✅ **Composants réutilisables** : Modal, TaskCard
+11. ✅ **Filtrage et recherche** : useMemo pour optimisation
+12. ✅ **Gestion de dates** : API Date JavaScript
+13. ✅ **Conditional rendering** : Affichage conditionnel
 
 ## 🔐 Connexion
 
-Pour tester l'application, vous pouvez utiliser n'importe quel email et mot de passe pour vous connecter 
+Pour tester l'application, vous pouvez utiliser n'importe quel email et mot de passe pour vous connecter
+
+## 🆕 Nouvelles Fonctionnalités
+
+### 🏷️ Catégories de Tâches
+Organisez vos tâches en 6 catégories distinctes :
+- 📋 **Général** - Tâches de tous les jours
+- 💼 **Travail** - Tâches professionnelles
+- 👤 **Personnel** - Tâches personnelles
+- 🛒 **Shopping** - Liste de courses
+- 🏥 **Santé** - Rendez-vous et médicaments
+- 🚨 **Urgent** - Tâches prioritaires
+
+Chaque catégorie a un badge coloré unique pour une identification rapide.
+
+### 📅 Dates d'Échéance
+- Attribuez une date limite à vos tâches
+- Visualisez la date d'échéance sur chaque carte de tâche
+- Les tâches en retard sont automatiquement marquées en rouge
+- Animation d'alerte pour les tâches dépassées
+
+### 🔍 Recherche Avancée
+- Recherchez vos tâches par titre ou description
+- Recherche en temps réel pendant la saisie
+- Fonctionne avec tous les filtres
+
+### 🔎 Système de Filtrage
+- **Par statut** : Toutes, Actives, Terminées
+- **Par catégorie** : Filtrer par catégorie spécifique
+- **Combinaison** : Utilisez plusieurs filtres simultanément
+- **Compteur** : Affiche le nombre de tâches trouvées
 
 ## 📝 Notes
 
 - Les données sont stockées dans le localStorage du navigateur
 - Le thème est sauvegardé et persiste entre les sessions
 - Les cookies sont utilisés pour la session utilisateur
+- Les tâches peuvent être organisées par catégories
+- Les dates d'échéance alertent automatiquement si dépassées
+- La recherche et le filtrage sont optimisés avec useMemo
+- Interface responsive pour tous les écrans
 
 
 ## 📖 Documentation
