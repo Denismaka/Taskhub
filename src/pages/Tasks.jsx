@@ -136,7 +136,7 @@ export default function TasksPage() {
                         </div>
                     )}
 
-                    {/* Tâches terminées */}
+                    {/* Tches terminées */}
                     {completedTasks.length > 0 && (
                         <div>
                             <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
@@ -162,7 +162,7 @@ export default function TasksPage() {
                 </>
             )}
 
-            {/* Modal de confirmation */}
+            {/* Modal de confimation */}
             <Modal
                 isOpen={modalOpen}
                 onClose={() => {
