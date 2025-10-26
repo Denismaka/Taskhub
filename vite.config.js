@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   base: '/Taskhub/',
+  build: {
+    outDir: '.',
+    emptyOutDir: false,
+    rollupOptions: {
+      input: './index.html',
+    },
+  },
 })
